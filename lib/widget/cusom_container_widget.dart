@@ -11,13 +11,11 @@ class ContainerRow extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          
           const CustomContainer(title: 'C1'),
           SizedBox(width: 15.h),
           const CustomContainer(title: 'C2'),
           SizedBox(width: 15.h),
           const CustomContainer(title: 'C3'),
-          
         ],
       ),
     );
@@ -38,11 +36,13 @@ class CustomContainer extends StatelessWidget {
       height: containerSize,
       color: Colors.blue,
       alignment: Alignment.center,
-      child: Text(title,
-          style: Theme.of(context)
-              .textTheme
-              .titleMedium
-              ?.copyWith(fontWeight: FontWeight.w600, color: Colors.white)),
+      child: Text(
+        title,
+        style: Theme.of(context)
+            .textTheme
+            .titleMedium
+            ?.copyWith(fontWeight: FontWeight.w600, color: Colors.white),
+      ),
     );
   }
 }

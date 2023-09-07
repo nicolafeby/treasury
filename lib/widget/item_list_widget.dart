@@ -83,46 +83,6 @@ class _CustomItemListState extends State<CustomItemList> {
                 isExpanded: selectedItemIndex == index,
               ),
             ],
-            // children: [
-            //   ExpansionPanel(
-            //     canTapOnHeader: true,
-            //     headerBuilder: (context, isExpanded) {
-            //       return ListTile(
-            //         title: Text(
-            //           item,
-            //           style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            //               fontSize: 16.sp, fontWeight: FontWeight.w600),
-            //         ),
-            //       );
-            //     },
-            //     body: Align(
-            //       alignment: Alignment.centerLeft,
-            //       child: Padding(
-            //         padding: EdgeInsets.all(16.r),
-            //         child: Column(
-            //           crossAxisAlignment: CrossAxisAlignment.start,
-            //           children: [
-            //             Text(
-            //               'Name $item',
-            //               style: Theme.of(context)
-            //                   .textTheme
-            //                   .bodyLarge
-            //                   ?.copyWith(fontWeight: FontWeight.w400),
-            //             ),
-            //             Text(
-            //               'Address $item',
-            //               style: Theme.of(context)
-            //                   .textTheme
-            //                   .bodyLarge
-            //                   ?.copyWith(fontWeight: FontWeight.w400),
-            //             ),
-            //           ],
-            //         ),
-            //       ),
-            //     ),
-            //     isExpanded: selectedItemIndex == index,
-            //   ),
-            // ],
           ),
         );
       }).toList(),

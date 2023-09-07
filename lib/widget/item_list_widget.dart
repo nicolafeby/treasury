@@ -43,7 +43,10 @@ class _CustomItemListState extends State<CustomItemList> {
                   return ListTile(
                     title: Text(
                       item,
-                      style: TextStyle(fontSize: 18.0),
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                            fontSize: 18.sp,
+                            fontWeight: FontWeight.w400,
+                          ),
                     ),
                   );
                 },
